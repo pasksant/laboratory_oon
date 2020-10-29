@@ -1,13 +1,13 @@
-def conting(list1,list2):
-    i=0
-    j=0
-    list3=[]
-    for i in max(len(list1),len(list2)):
-        if i<len(list1):
-            if list1[i]%2!=0:
-                list3[j]=list1[i]
-                j += 1
-        if i<len(list2):
-           if list2[i]%2==0:
-                list3[j]=list2[i]
-                j += 1
+list1=[10,20,23,11,17]
+list2=[13,43,24,36,12]
+i=0
+j=0
+list3=[]
+for element in list1:
+    if element%2!=0:
+        list3.append(element)
+for element in list2:
+    if element%2==0:
+        list3.append(element)
+for element in list3:
+    print("the merged list is",element)

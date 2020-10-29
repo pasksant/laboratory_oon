@@ -1,13 +1,13 @@
-def sum_ave(str):
-    sum=0
-    j=0
-    for i in range(len(str)):
-        if str[i].isdigit():
-           sum=sum+str[i]
-           j=j+1
-    ave=sum/j
-    return sum
-    return ave
+str='English = 78 Science = 83 Math = 68 History = 65'
+sum=0
+counts_num=0
+words = str.split()
+for num in words:
+    if num.isnumeric():
+       sum = sum + int(num)
+       counts_num += 1
+ave=sum/counts_num
+print("la somma è",sum,"\nla media è",ave)
 
 
 

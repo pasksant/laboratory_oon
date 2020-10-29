@@ -1,11 +1,9 @@
-x=int(input("Enter first number: "))
-y=int(input("\nEnter first number: "))
-s = x + y
-if s>0:
- result=s
-else:
- if x>y:
-  result=x
- else:
-  result=y
-print("\nthe result is",result)
+#esercizio 2
+N=int(input("inserire lunghezza della lista: "))
+prev=0
+print("\nla somma del precedente e del successivo è: ")
+for curr in range(N):
+ if curr!=0:
+  tot = prev+curr
+  print("\n",tot)
+ prev=curr

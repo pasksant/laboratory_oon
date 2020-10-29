@@ -1,8 +1,8 @@
-def conteggio(str):
-     upper=0
-     lower=0
-     digits=0
-     symb=0
+str='P@#yn26at^&i5ve'
+upper=0
+lower=0
+digits=0
+symb=0
 for i in range(len(str)):
     if str[i].isupper():
       upper=upper + 1
@@ -12,7 +12,7 @@ for i in range(len(str)):
       digits= digits + 1
     else:
       symb =symb + 1
-    print('Upper case letters:', upper)
-    print('Lower case letters:', lower)
-    print('Number:', digits)
-    print('Special characters:', symb)
+print('Upper case letters:', upper)
+print('Lower case letters:', lower)
+print('Number:', digits)
+print('Special characters:', symb)

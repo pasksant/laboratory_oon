@@ -1,6 +1,6 @@
-def occurrences(str):
- N=0
- for i in range(len(str)):
-  if str[i].isalpha():
-      N=N+1
- return N
+str='pynativepynvepynative'
+count_dict =dict()
+for char in str:
+   counts=str.count(char)
+   count_dict[char]=counts
+print(count_dict)
